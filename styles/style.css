@@ -311,6 +311,7 @@ header h5{
     background-position: 24px 24px;
     padding: 48px 24px;
     border-radius: 24px;
+    border: 1px solid rgb(199, 199, 199);
     transition: background-position 0.9s ease;
 }
 .dr-yunus:hover{
