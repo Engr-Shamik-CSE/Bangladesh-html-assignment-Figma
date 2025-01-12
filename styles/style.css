@@ -7,6 +7,8 @@
 }
 body{
     background: #f5f5f5;
+
+    box-sizing: border-box;
 }
 h1, h2, h3, p {
     font-family: 'Fira Sans', sans-serif;
@@ -227,6 +229,7 @@ header h5{
     text-align: center;
     transition: transform 0.5s ease,backgroung-color 0.5s ease, box-shadow 0.5s ease;
 }
+
 .cta-input{
     margin:0 30px;
     
@@ -235,9 +238,12 @@ header h5{
     padding: 25px;
     text-align: center;
 }
+.donation-card:nth-child(2){
+    background-color: rgb(198, 228, 214);
+}
 .donation-card:hover {
     transform: scale(1.05);
-    background-color: rgba(198, 228, 214, 1);
+    background-color: rgb(198, 228, 214);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
@@ -284,12 +290,17 @@ header h5{
 /* Donate Today section END */
 
 .dr-yunus{
+    position: relative;
     background-color: white;
     background-image: url(/assets/quote-bg.png);
     background-repeat: no-repeat;
     background-position: 24px 24px;
     padding: 48px 24px;
     border-radius: 24px;
+    transition: background-position 0.9s ease;
+}
+.dr-yunus:hover{
+    background-position: 85% 35%;;
 }
 .dr-yunus h4{
     padding-top: 20px;
@@ -302,4 +313,53 @@ header h5{
 .Newslatter-Section{
     background-color: #c5e4d5;
     border-radius: 24px;
+    padding: 50px 40px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+      align-items: center;
 }
+.newsletter-body{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .newsletter-form input[type="email"] {
+    padding: 16px 32px;
+    min-width: 500px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      outline: none;
+  }
+  .newsletter-form input[type="email"]:focus {
+    box-shadow: none;
+  }
+  .newsletter-form button {
+    padding: 16px 32px;
+    border: none;
+    background-color: rgb(0, 105, 81);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.5s ease;
+    border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+  }
+  .newsletter-form button:hover {
+    background-color: #f40200;
+    padding: 15px 31px;
+    Border: 1px red solid;
+  }
