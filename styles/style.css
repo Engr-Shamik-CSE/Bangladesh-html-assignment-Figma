@@ -306,7 +306,7 @@ header h5{
 .dr-yunus{
     position: relative;
     background-color: white;
-    background-image: url(/assets/quote-bg.png);
+    background-image: url("/assets/quote-bg.png");
     background-repeat: no-repeat;
     background-position: 24px 24px;
     padding: 48px 24px;
