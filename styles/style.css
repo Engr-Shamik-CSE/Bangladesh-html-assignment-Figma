@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    background-color: f5f5f5;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Fira Sans', sans-serif;
+}
+h1, h2, h3, p {
+    font-family: 'Fira Sans', sans-serif;
+    color: #0E0E0E;
+
+}
+.common-btn-a{
+    display: inline-block;
+    background-color: #006A50;
+    border: 0px;
+    border-radius: 8px;
+    /* height: 40px; */
+    /* //max-width: 139px; */
+    padding: 13px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.common-btn-a:hover{
+    background-color: #f40200;
+    color: #ffffff;
+}
+
+.container{
+    max-width: 1250px;
+    display: block;
+}
+header{
+
+    background-color: #c5e4d5;
+    padding: 80px 69px;
+    margin: 30px auto;
+    border: 0;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .Bangladesh-idea-hero{
+    padding-top: 30pX;
+    padding-right: 32px;
+}
+header img{
+    width: 45%;
+    padding-left:32px;
+}
+header h1{
+    font-size: 52px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+header h5{
+    font-size: 20px;
+    color:rgba(14, 14, 14, 0.5);
+}
+
+/* The Vision of Future */
+.the-vision-of-future{
+    margin-top: 90px;
+}
+/* .the-vision-of-future h2{ */
+.Vision-heading{
+    font-size: 40px;
+    margin:30px auto;
+}
+.the-vision-of-future p{
+    color: rgba(14, 14, 14, 0.7);
+
+}
+
+.digital-green-modern-parent{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 25px;
+    padding: 50px 0px;
+   
+}
+.common-vision-card{
+    flex: 1;
+    padding: 30px;
+    border: 0px;
+    border-radius: 16px;
+
+}
+.common-vision-card h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px auto;
+    
+}
+.common-vision-card p{
+    font-size: 16px;
+    color: rgba(14, 14, 14, 0.7);
+    margin-bottom: 10px;
+}
+
+.common-vision-card-blue{
+    background-color: #d5e2f5;
+}
+.common-vision-card-blue-btn{
+    background-color: #568efd;
+}
+.common-vision-card-green{
+    background-color: #c5e4d5;
+}
+.common-vision-card-green-btn{
+    background-color: #07a45c;
+}
+.common-vision-card-yellow{
+    background-color: #f6ebcf;
+}
+.common-vision-card-yellow-btn{
+    background-color: #ffc13f;
+}
+.card-btn{
+    font-size: 16px;
+    padding: 11px 26px;
+}
+
+
