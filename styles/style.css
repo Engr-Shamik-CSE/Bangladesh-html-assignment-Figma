@@ -27,10 +27,10 @@ h1, h2, h3, p {
     text-align: center;
     font-size: 18px;
     font-weight: 600;
+    transition: background-color 0.5s ease;
 }
 .common-btn-a:hover{
     background-color: #f40200;
-    color: #ffffff;
 }
 
 .container{
@@ -54,6 +54,10 @@ header .Bangladesh-idea-hero{
 header img{
     width: 45%;
     padding-left:32px;
+    transition: filter 0.5s ease;
+}
+header img:hover{
+    filter: saturate(2) contrast(1.5);
 }
 header h1{
     font-size: 52px;
@@ -70,7 +74,7 @@ header h5{
     margin-top: 90px;
 }
 /* .the-vision-of-future h2{ */
-.Vision-heading{
+.Vision-heading, .common-heading{
     font-size: 40px;
     margin:30px auto;
 }
@@ -97,7 +101,19 @@ header h5{
     border-radius: 16px;
 
 }
-.common-vision-card h4{
+.common-vision-card img{
+    transition: transform 0.3s ease, filter 0.3s ease;
+    object-fit: cover;
+}
+.common-vision-card-img-container{
+    overflow: hidden;
+    position: relative;
+}
+.common-vision-card:hover .common-vision-card-img-container img {
+    transform: scale(1.1) translateX(20px);
+    filter: saturate(5) contrast(1.9);
+}
+.common-vision-card h4, .yunus-name{
     font-size: 20px;
     font-weight: bold;
     margin: 15px auto;
@@ -131,6 +147,9 @@ header h5{
     font-size: 16px;
     padding: 11px 26px;
 }
+.common-vision-card:hover .card-btn{
+    background-color: #f40200;
+}
 
 /* Recent News Section */
 
@@ -138,7 +157,7 @@ header h5{
     /* container: ; */
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 .blog-parent{
     /* content */
@@ -157,7 +176,7 @@ header h5{
     flex-direction: row-reverse;
 }
 
-.Recent-News-Section, common-h2{
+.Recent-News-Section{
     margin: 50px auto;
 }
 .satallite-blog{
@@ -173,4 +192,114 @@ header h5{
     border: 0px;
     border-radius: 18px;
     margin: 10px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+.blog-parent:hover .blog-parent-img img{
+    transform: scale(1.05);
+    filter: saturate(2) contrast(1.5);
+}
+/* Donate Today section START */
+.donate-today{
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.doantion-header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.cta-donation-options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.donation-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: #fff;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease,backgroung-color 0.5s ease, box-shadow 0.5s ease;
+}
+.cta-input{
+    margin:0 30px;
+    
+}
+.cta-input-text{
+    padding: 25px;
+    text-align: center;
+}
+.donation-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(198, 228, 214, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* .donation-card h4 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+} */
+
+
+/* Input Field */
+.cta-input input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+/* Donate Button */
+.cta-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta-button button {
+    background-color: #006a50;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+}
+
+.cta-button button:hover {
+    background-color: #f40200;
+}
+/* Donate Today section END */
+
+.dr-yunus{
+    background-color: white;
+    background-image: url(/assets/quote-bg.png);
+    background-repeat: no-repeat;
+    background-position: 24px 24px;
+    padding: 48px 24px;
+    border-radius: 24px;
+}
+.dr-yunus h4{
+    padding-top: 20px;
+}
+.subtitle{
+    font-size: 14px ;
+    color:rgba(14, 14, 14, 0.7)
+}
+
+.Newslatter-Section{
+    background-color: #c5e4d5;
+    border-radius: 24px;
 }
