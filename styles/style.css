@@ -240,11 +240,25 @@ header h5{
 }
 .donation-card:nth-child(2){
     background-color: rgb(198, 228, 214);
+    animation: scaleAnimation 2s infinite ease-in-out;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .donation-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.09);
     background-color: rgb(198, 228, 214);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    animation: none;
 }
 
 /* .donation-card h4 {
